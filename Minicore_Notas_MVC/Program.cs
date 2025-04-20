@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Minicore_Notas_MVC.Data; // ← Cambiado al nuevo namespace
+using Minicore_Notas_MVC.Data;
 
-namespace Minicore_Notas_MVC // ← Cambiado el namespace del proyecto
+namespace Minicore_Notas_MVC
 {
     public class Program
     {
@@ -11,8 +11,9 @@ namespace Minicore_Notas_MVC // ← Cambiado el namespace del proyecto
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+                options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             var app = builder.Build();
 

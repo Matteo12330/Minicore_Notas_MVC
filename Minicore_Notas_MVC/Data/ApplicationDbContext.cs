@@ -32,7 +32,8 @@ namespace Minicore_Notas_MVC.Data
             );
         }
 
-        public List<Grade> GetGradesByStudent(int studentId) => Grades.Where(g => g.StudentId == studentId).ToList();
+        public List<Grade> GetGradesByStudent(int studentId) =>
+            Grades.Where(g => g.StudentId == studentId).ToList();
 
         public List<Grade> GetGradesByRange(int studentId, DateOnly start, DateOnly end) =>
             Grades.Where(g => g.StudentId == studentId && g.Date >= start && g.Date <= end).ToList();

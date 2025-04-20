@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace Minicore_Notas_MVC.Models
 {
@@ -12,7 +13,8 @@ namespace Minicore_Notas_MVC.Models
         [Required]
         public DateOnly End { get; set; }
 
-        [Required, Range(1, 99)]
+        [Required]
+        [Range(1, 99)]
         public int Weigh { get; set; }
     }
 }

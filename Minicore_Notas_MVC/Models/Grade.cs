@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Minicore_Notas_MVC.Models
@@ -8,9 +9,11 @@ namespace Minicore_Notas_MVC.Models
         public int Id { get; set; }
 
         [Required]
+        [MaxLength(100)] // Fijamos tamaño para evitar error con nvarchar(max)
         public string Name { get; set; }
 
-        [Required, Range(0, 10)]
+        [Required]
+        [Range(0, 10)]
         public double GradeValue { get; set; }
 
         [Required]
