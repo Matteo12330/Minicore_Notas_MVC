@@ -31,7 +31,7 @@ Está diseñado como parte de un ejercicio práctico para aplicar el patrón MVC
 - [ASP.NET Core MVC – Microsoft Docs](https://learn.microsoft.com/es-es/aspnet/core/mvc/overview?view=aspnetcore-8.0)
 - [Entity Framework Core Docs](https://learn.microsoft.com/en-us/ef/core/)
 - [SQLite Docs](https://www.sqlite.org/index.html)
-- [Cómo desplegar .NET en Render](https://render.com/docs/deploy-dotnet-core)
+- [Cómo desplegar .NET en Render](https://www.youtube.com/watch?v=CbyVItXf6Lw)
 
 ---
 
